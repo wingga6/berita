@@ -3,204 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pasutri gay muda</title>
+    <title>Analisis Kesenjangan Gender dalam Partisipasi dan Upah Tenaga Kerja di Indonesia</title>
     <style>
-        /* CSS Dasar untuk Layout */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #1c1c1c;
-        }
-
-        /* Header (Top Nav Bar) */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            border-bottom: 1px solid #ccc;
-            height: 40px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .header-left, .header-right {
-            display: flex;
-            align-items: center;
-        }
-
-        .header-center {
-            font-size: 24px;
-            font-weight: bold;
-            color: #000;
-            letter-spacing: -2px;
-        }
-
-        .header-center span:first-child {
-            background-color: #000;
-            color: #fff;
-            padding: 0 4px;
-            margin-right: 1px;
-        }
-
-        .header-right button {
-            margin-left: 10px;
-            padding: 8px 12px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .register-btn {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .sign-in-btn {
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #000 !important;
-        }
-
-        .icon {
-            font-size: 20px;
-            margin-right: 15px;
-            cursor: pointer;
-        }
-
-        /* Konten Artikel Utama */
-        .article-container {
-            max-width: 900px; /* Lebar maksimum artikel, meniru layout BBC */
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-
-        /* Judul */
-        h1 {
-            font-size: 40px;
+        header {
+            border-bottom: 3px solid #e74c3c; /* Garis merah khas media */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: <strong>bold</strong>;
+            color: #1a1a1a; /* Warna hitam untuk logo WINGGA */
+            margin: 0;
+            line-height: 1;
+            letter-spacing: 5px; /* Memberi jarak antar huruf untuk efek 'W I N G G A' */
+            text-align: center;
+        }
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        .nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .article-title {
+            font-size: 2.2em;
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 15px;
         }
-
-        /* Metadata (Tanggal, Penulis, Share) */
         .metadata {
-            font-size: 14px;
-            color: #585858;
+            color: #7f8c8d;
+            font-size: 0.9em;
             margin-bottom: 25px;
-            padding-bottom: 15px;
             border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
+            padding-bottom: 10px;
         }
-
-        .author-date p {
-            margin: 4px 0;
+        .author-name {
+            font-weight: <strong>bold</strong>;
+            color: #333;
         }
-
-        .share-links a {
-            color: #585858;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
+        .share-save {
+            float: right;
+            font-size: 0.8em;
         }
-
-        /* Gambar Utama */
-        figure {
-            margin: 0 0 25px 0;
-        }
-
-        figure img {
-            width: 100%;
+        /* Style untuk Gambar Ilustrasi */
+        .article-image {
+            width: 100%; /* Memastikan gambar mengisi lebar konten */
             height: auto;
+            margin-bottom: 25px;
+            display: block;
+            border-radius: 5px; /* Sedikit sentuhan modern */
+        }
+        .content h2 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #e74c3c;
+            padding-left: 10px;
+        }
+        .data-table-container {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #e74c3c;
+            color: white;
+            font-weight: <strong>bold</strong>;
+        }
+        .caption {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 5px;
             display: block;
         }
-
-        figcaption {
-            font-size: 12px;
-            color: #585858;
-            margin-top: 8px;
-            text-align: left;
+        .bibliography li {
+            margin-bottom: 15px;
+            list-style-type: none;
+            padding-left: 0;
         }
-
-        /* Badan Artikel */
-        .article-body p {
-            font-family: Georgia, serif; /* Menggunakan serif untuk badan teks seperti berita */
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        /* Responsif Sederhana */
-        @media (max-width: 768px) {
-            .article-container {
-                padding: 15px;
-            }
-            h1 {
-                font-size: 30px;
-            }
-            .article-body p {
-                font-size: 18px;
-            }
-            .header-center {
-                /* Sembunyikan Logo besar di perangkat kecil jika perlu */
-                font-size: 20px;
-            }
+        .bibliography h2 {
+            border-left: none;
+            text-align: center;
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-left">
-            <span class="icon">☰</span>
-            <span class="icon">🔍</span>
-        </div>
-        <div class="header-center">
-            <span>X</span><span>X</span><span>X</span>
-        </div>
-        <div class="header-right">
-            <button class="register-btn">Register</button>
-            <button class="sign-in-btn">Sign In</button>
+    <header>
+        <div class="logo">W I N G G A</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Sport</a>
+            <a href="#">Business</a>
+            <a href="#">Innovation</a>
+            <a href="#">Culture</a>
+            <a href="#">Arts</a>
+            <a href="#">Travel</a>
+            <a href="#">Earth</a>
+            <a href="#">Audio</a>
+            <a href="#">Video</a>
+            <a href="#" style="font-weight: <strong>bold</strong>; color: #e74c3c;">Live</a>
         </div>
     </header>
 
-    <main class="article-container">
-
-        <h1>Nias BUJAAAAANG</h1>
+    <main>
+        <h1 class="article-title">
+            Analisis Kesenjangan Gender dalam Partisipasi dan Upah Tenaga Kerja di Indonesia: Realita dan Tantangan
+        </h1>
 
         <div class="metadata">
-            <div class="author-date">
-                <p>19 September 2025</p>
-                <p><strong>Wingga Tripasya</strong><br>Mahasiswa PCR Keren Anjay</p>
+            <div class="share-save">Share <span style="margin: 0 5px;">|</span> Save</div>
+            07 Desember 2025
+            <br>
+            <span class="author-name">Wingga Tripasya</span>
+            <br>
+            NIM: 2561316100
+        </div>
+        
+        <img src="wagegap.jpg" alt="Ilustrasi wage gap" class="article-image">
+
+        <div class="content">
+
+            <p>
+                Ketenagakerjaan merupakan salah satu pilar utama dalam pembangunan ekonomi suatu negara. Di Indonesia, bonus demografi menjanjikan potensi pertumbuhan ekonomi yang pesat, namun potensi ini belum tergarap maksimal karena adanya ketimpangan struktural dalam partisipasi angkatan kerja. Salah satu isu krusial yang masih menjadi sorotan adalah <strong>kesenjangan gender dalam partisipasi kerja</strong>.
+            </p>
+            <p>
+                Kesenjangan ini tidak hanya berdampak pada kesejahteraan individu perempuan, tetapi juga menghambat pertumbuhan Produk Domestik Bruto (PDB) nasional secara keseluruhan. Akses pendidikan bagi perempuan di Indonesia semakin terbuka lebar, namun hal tersebut belum berbanding lurus dengan partisipasi mereka di pasar kerja formal.
+            </p>
+
+            <h2>Fenomena Ketenagakerjaan: Beban Ganda dan Sektor Informal</h2>
+            <p>
+                Fenomena yang terjadi saat ini adalah adanya disparitas yang signifikan antara laki-laki dan perempuan dalam hal akses pekerjaan, tingkat upah, dan beban ganda (*double burden*). Banyak perempuan Indonesia yang memiliki tingkat pendidikan tinggi namun memilih untuk tidak bekerja atau terpaksa bekerja di sektor informal dengan perlindungan minim.
+            </p>
+            <p>
+                Secara naratif, fenomena ini sering kali menimpa perempuan usia produktif yang dihadapkan pada dilema antara karir dan tanggung jawab domestik. Budaya patriarki yang masih melekat di sebagian masyarakat menempatkan perempuan sebagai penanggung jawab utama urusan rumah tangga, sehingga ketika mereka bekerja, mereka memikul beban ganda. Akibatnya, banyak perempuan yang "terlempar" dari pasar kerja formal atau memilih pekerjaan paruh waktu dengan upah yang lebih rendah dibandingkan laki-laki, meskipun memiliki kualifikasi yang setara.
+            </p>
+
+            <h2>Data Pendukung Kesenjangan Upah (Agustus 2024)</h2>
+            <p>
+                Berdasarkan data resmi dari Badan Pusat Statistik (BPS) tahun 2024, berikut adalah penyajian data yang menunjukkan adanya kesenjangan upah:
+            </p>
+
+            <div class="data-table-container">
+                <h3>Tabel 1: Perbandingan Rata-rata Upah Buruh per Bulan Menurut Jenis Kelamin (Agustus 2024)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Rata-rata Upah (Rupiah)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laki-laki</td>
+                            <td>Rp 3.540.000,-</td>
+                        </tr>
+                        <tr>
+                            <td>Perempuan</td>
+                            <td>Rp 2.770.000,-</td>
+                        </tr>
+                        <tr>
+                            <td>Selisih (Gap)</td>
+                            <td>Rp 770.000,-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="caption">Sumber: BPS, Survei Angkatan Kerja Nasional (Sakernas) Agustus 2024</span>
             </div>
-            <div class="share-links">
-                <a href="#">Share ↱</a>
-                <a href="#">Save ☊</a>
+
+            <div class="data-table-container">
+                <h3>Tabel 2: Upah Rata-rata Per Jam Pekerja (2024)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Upah Per Jam (Rupiah)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laki-laki</td>
+                            <td>Rp 19.787,-</td>
+                        </tr>
+                        <tr>
+                            <td>Perempuan</td>
+                            <td>Rp 17.457,-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="caption">Sumber: BPS, Upah Rata-Rata Per Jam Pekerja Menurut Jenis Kelamin, 2024</span>
             </div>
+
+            <p>
+                Data Tabel 1 menunjukkan bahwa secara rata-rata nasional pada tahun 2024, buruh laki-laki menerima upah yang lebih tinggi sekitar 27,7% dibandingkan buruh perempuan. Kesenjangan ini diperkuat oleh data Tabel 2, yang menunjukkan bahwa dalam hitungan per jam pun, tenaga kerja laki-laki dihargai lebih tinggi. Selain itu, data BPS juga mencatat bahwa Tingkat Partisipasi Angkatan Kerja (TPAK) masih didominasi laki-laki, dengan kesenjangan partisipasi yang diperkirakan masih berada di angka sekitar 25%.
+            </p>
+
+            <h2>Analisis: Kesenjangan yang Bersifat Struktural</h2>
+            <p>
+                Mengaitkan fenomena naratif dengan data di atas, terlihat jelas bahwa kesenjangan gender di Indonesia bersifat struktural. Analisis penyebab dan dampaknya adalah sebagai berikut:
+            </p>
+            <ul>
+                <li><strong>Segregasi Sektoral</strong>: Data upah yang lebih rendah pada perempuan sebagian disebabkan oleh konsentrasi pekerja perempuan di sektor-sektor dengan nilai tambah rendah atau sektor informal (seperti jasa kemasyarakatan dan perdagangan eceran). Sebaliknya, laki-laki mendominasi sektor padat modal seperti pertambangan yang memiliki rata-rata upah tertinggi (Rp 5,23 juta).</li>
+                <li><strong>Beban Ganda (Double Burden)</strong>: Kesenjangan partisipasi kerja (TPAK) terjadi karena minimnya fasilitas penunjang bagi ibu bekerja, seperti tempat penitipan anak (*daycare*) yang terjangkau. Hal ini memaksa perempuan untuk keluar dari angkatan kerja atau mengurangi jam kerja mereka, yang pada akhirnya menurunkan rata-rata pendapatan mereka.</li>
+                <li><strong>Kesenjangan Pendidikan vs Ketersediaan Lapangan Kerja</strong>: Data Kemnaker menunjukkan paradoks menarik dimana pada jenjang pendidikan Diploma, jumlah penduduk bekerja justru didominasi perempuan (53,46%). Namun, secara agregat nasional, partisipasi perempuan tetap rendah. Ini mengindikasikan bahwa perempuan berpendidikan tinggi memiliki peluang, namun perempuan dengan pendidikan rendah sangat rentan dan sulit masuk ke pasar kerja formal.</li>
+            </ul>
+
+            <h3>Solusi yang Ditawarkan</h3>
+            <p>
+                Pemerintah dan sektor swasta perlu mendorong kebijakan kerja fleksibel (*flexible working arrangement*) yang memungkinkan perempuan menyeimbangkan peran domestik dan publik. Selain itu, penegakan aturan mengenai kesetaraan upah (*equal pay for equal work*) dan penyediaan fasilitas penitipan anak di tempat kerja harus menjadi prioritas.
+            </p>
+
+            <h2>Kesimpulan</h2>
+            <p>
+                Berdasarkan analisis fenomena dan data BPS 2024, dapat disimpulkan bahwa kesenjangan gender dalam ketenagakerjaan di Indonesia masih menjadi tantangan serius. Hal ini terbukti dari selisih rata-rata upah bulanan sebesar Rp 770.000 antara laki-laki dan perempuan serta dominasi laki-laki dalam sektor berupah tinggi. Kesenjangan ini bukan semata-mata karena perbedaan kemampuan, melainkan akibat faktor struktural seperti segregasi jenis pekerjaan dan beban ganda domestik. Mengatasi masalah ini memerlukan intervensi kebijakan yang tidak hanya fokus pada peningkatan keterampilan perempuan, tetapi juga pada penciptaan ekosistem kerja yang inklusif dan ramah keluarga.
+            </p>
         </div>
 
-        <figure>
-            <img src="img_jakiamal.jpg" alt="Zaki Gay" style="width: 100%; max-width: 300px;">
-            <figcaption>
-                Zaki dan Amal sedang melakukan adegan furgal di sebuah kedawi sarapan pagi tanpa busana.
-                <span style="float: right; color: #aaa;">XXX</span>
-            </figcaption>
-        </figure>
-
-        <div class="article-body">
-            <p>
-                Nias Bujang
-            </p>
-            <p>
-                Mukanya zaki kek puas kali anjg.
-            </p>
-            <p>
-                Hebat kali memang yg buat website nya ni
-            </p>
+        <div class="bibliography" style="margin-top: 50px;">
+            <h2>DAFTAR PUSTAKA</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    Badan Pusat Statistik. (2024). <em>Keadaan Angkatan Kerja di Indonesia Agustus 2024</em> (Berita Resmi Statistik No. 80/11/Th. XXVII). Jakarta: Badan Pusat Statistik. 
+                    <br>
+                    <a href="https://www.bps.go.id/id/publication/2024/12/09/6f1fd1036968c8a28e4cfe26/keadaan-angkatan-kerja-di-indonesia-agustus-2024.html" target="_blank">https://www.bps.go.id/id/publication/2024/12/09/6f1fd1036968c8a28e4cfe26/keadaan-angkatan-kerja-di-indonesia-agustus-2024.html</a>
+                </li>
+                <li>
+                    Badan Pusat Statistik. (2024). <em>Upah Rata-Rata Per Jam Pekerja Menurut Jenis Kelamin Tahun 2024</em>. Jakarta: Badan Pusat Statistik. 
+                    <br>
+                    <a href="https://www.bps.go.id/id/statistics-table/2/MTE3NCMy/upah-rata---rata-per-jam-pekerja-menurut-jenis-kelamin.html" target="_blank">https://www.bps.go.id/id/statistics-table/2/MTE3NCMy/upah-rata---rata-per-jam-pekerja-menurut-jenis-kelamin.html</a>
+                </li>
+                <li>
+                    Kementerian Ketenagakerjaan Republik Indonesia. (2024). <em>Angkatan Kerja di Indonesia Menurut Pendidikan dan Jenis Kelamin Tahun 2024</em>. Jakarta: Satudata Kemnaker. 
+                    <br>
+                    <a href="https://satudata.kemnaker.go.id/infografik/90" target="_blank">https://satudata.kemnaker.go.id/infografik/90</a>
+                </li>
+            </ul>
         </div>
     </main>
 
